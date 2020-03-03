@@ -5,8 +5,8 @@ class HauntedHouse < ActiveRecord::Base
     create_table :haunted_houses, :force => true do |t|
       t.string :name
       t.string :location
-      t.integer :costume_inventory 
-      t.integer :num_of_employees
+      t.string :theme 
+      t.float :price
       t.boolean :still_in_business
       t.string :opening_time
       t.string :closing_time
